@@ -13,18 +13,24 @@
       >
     </div>
   </div>
+  <div class="row">
+  <ProjectCard v-for="project in projects" :obj="project"></ProjectCard>
+  </div>
 </template>
 
 <script>
+import ProjectCard from '../components/ProjectCard.vue';
 import { store } from "../store";
 import axios from "axios";
 export default {
   name: "ProjectList",
+  
   data() {
     return {
       store,
       projects: [],
       descriptionLenght: 100,
+      
     };
   },
   methods: {
