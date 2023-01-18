@@ -14,17 +14,19 @@
     </div>
   </div>
   <div class="row">
-  <ProjectCard v-for="project in projects" :obj="project"></ProjectCard>
+    <ProjectCardComponent v-for="project in projects" :obj="project"></ProjectCardComponent>
   </div>
+  
 </template>
 
 <script>
-import ProjectCard from '../components/ProjectCard.vue';
+
+import ProjectCardComponent from "../components/ProjectCardComponent.vue";
 import { store } from "../store";
 import axios from "axios";
 export default {
   name: "ProjectList",
-  
+ components: { ProjectCardComponent },
   data() {
     return {
       store,
@@ -50,3 +52,4 @@ export default {
 img{
   width: 200px;
 }</style>
+

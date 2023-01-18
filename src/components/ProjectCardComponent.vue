@@ -1,15 +1,13 @@
 <template>
-
+    <div>
         <h1>{{ obj.nome_progetto }}</h1>
-
+    </div>
 </template>
 
 <script>
-export default {
-        props:["obj"],
-    name: 'ProjectCard',
-  
-
+    export default {
+    name: 'ProjectCardComponent',
+        props:["obj"]
     }
 </script>
 
