@@ -1,19 +1,6 @@
 <template>
-  <h1>ProjectList</h1>
-  <div class="row">
-    <div class="col-3 col-md-4" v-for="project in projects">
-      <h6>{{ project.nome_progetto }}</h6>
-      <p>{{ project.descrizione }}</p>
-      <p>{{ project.slug }}</p>
-      <img :src="`${store.imagePath}${project.img}`" class="card-img-top" >
-      <router-link
-        :to="{ name: 'ProjectPage', params: { slug: project.slug } }"
-        class="btn btn-primary"
-        >Visualizza il dettaglio del progetto</router-link
-      >
-    </div>
-  </div>
-  <div class="row">
+
+  <div class="row my_container">
     <ProjectCardComponent v-for="project in projects" :obj="project"></ProjectCardComponent>
   </div>
   
@@ -51,5 +38,9 @@ export default {
 <style lang="scss" scoped>
 img{
   width: 200px;
-}</style>
+}
+.my_container{
+  padding-top: 2rem;
+}
+</style>
 
