@@ -11,7 +11,7 @@
             </section>
             <section class="head_show_right">
                 <section v-if="project.tecnologies">
-                <p v-for="tecnology in project.tecnologies"> Tecnologie utilizzate: {{ tecnology.name }}</p>
+                <span>Tecnologie Utilizzate : </span><span v-for="tecnology in project.tecnologies"> {{ tecnology.name }} , </span>
                 </section>
                 <section v-else>0</section>
             </section> 
@@ -24,7 +24,7 @@
 
         </div>
         <div v-else>
-        <img src="../../public/img/no_img.webp" alt="">
+        <img src="/img/no_img.webp" alt="">
         </div>
             <div class="descrizione">
           <p>{{ project.descrizione }}</p>

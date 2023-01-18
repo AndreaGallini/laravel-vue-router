@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <footer>
     <nav class="navbar navbar-expand-lg bg-body-tertiary text-center">
       <div class="container-flui text-center">
         
@@ -33,7 +33,7 @@
         </div>
       </div>
     </nav>
-  </header>
+  </footer>
 </template>
 
 <script>
