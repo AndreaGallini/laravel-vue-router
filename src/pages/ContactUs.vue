@@ -1,10 +1,18 @@
 <template>
-  <div>ContactUs</div>
+
+  <div class="row">
+    <div class="col-12">
+      <ContactsFormComponent></ContactsFormComponent>
+    </div>
+
+  </div>
 </template>
 
 <script>
+import ContactsFormComponent from '../components/ContactsFormComponent.vue';
 export default {
   name: "ContactUs",
+  components:{ContactsFormComponent}
 };
 </script>
 
